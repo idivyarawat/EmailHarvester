@@ -3,17 +3,26 @@
 import os
 import re
 import requests
+import random
 from bs4 import BeautifulSoup
 import time
 import argparse
+from fake_useragent import UserAgent
+
+def get_random_user_agent():
+    ua = UserAgent()  # Initialize UserAgent object
+    return ua.random
+    
+def get_random_delay(min_delay=1, max_delay=5):
+    return random.uniform(min_delay, max_delay)
 
 # Function to perform a Google search and return the HTML content of the search results
 def google_search(query, start=0):
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        "User-Agent": get_random_user_agent()
     }
     url = f"https://www.google.com/search?q={query}&start={start}"
-    response = requests.get(url, headers=headers, verify=False)
+    response = requests.get(url, headers=headers, verify=False, timeout=10)
     if response.status_code == 200:
         return response.text
     else:
@@ -47,7 +56,7 @@ def download_pages(query, max_results=10, output_folder='downloaded_pages'):
                 visited_urls.add(url)
                 try:
                     # Bypassing SSL certificate verification
-                    response = requests.get(url, verify=False)
+                    response = requests.get(url,headers={"User-Agent": get_random_user_agent()}, verify=False , timeout=10) 
                     if response.status_code == 200:
                         file_name = f"page_{len(downloaded_files) + 1}.html"
                         file_path = os.path.join(output_folder, file_name)
@@ -67,7 +76,9 @@ def download_pages(query, max_results=10, output_folder='downloaded_pages'):
 
         # Move to the next page of Google search results
         start += results_per_page
-        time.sleep(2)  # Add a delay to avoid being blocked by Google
+        delay = get_random_delay(2, 5) 
+        print(f"Waiting for {delay:.2f} seconds before the next request...")
+        time.sleep(delay) 
 
     return downloaded_files
 
@@ -82,7 +93,7 @@ def extract_and_download_links(html_content, visited_urls, output_folder):
             visited_urls.add(url)
             try:
                 # Bypassing SSL certificate verification
-                response = requests.get(url, verify=False)
+                response = requests.get(url,headers={"User-Agent": get_random_user_agent()}, verify=False , timeout=10)
                 if response.status_code == 200:
                     file_name = f"page_{len(visited_urls)}.html"
                     file_path = os.path.join(output_folder, file_name)

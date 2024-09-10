@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Poppins";
+    }
+
+    #header {
+      position: sticky;
+      top: 0;
+      
+    }
+
+    #btn-back-to-top {
+      position: fixed;
+      display: none;
+    }
+
+    .tpodownload {
+      background: linear-gradient(90.09deg, rgba(0, 0, 0, 0.7) 0.08%, rgba(255, 255, 255, 0) 99.11%), url(../img/bg_downloads.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height =
+        obj.contentWindow.document.documentElement.scrollHeight + "px";
+    }
+  </script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - NITJ</title>
+    
+        <!-- ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- font-family: 'Barlow', sans-serif;
+        font-family: 'Poppins', sans-serif; -->
+    
+        <script>
+            let leastpri = 5
+            function executor() {
+                if (priority < leastpri) {
+                    leastpri = priority
+                } else {
+                    leastpri++
+                    return
+                }
+                switch (leastpri) {
+                    case 1:
+                        close_menu()
+                        break
+                    case 2:
+                        keep_menu_open()
+                        break
+                    case 3:
+                        close_menu()
+                        break
+                    case 4:
+                        close_menu()
+                        break
+                }
+                leastpri++
+            }
+            function open_menu() {
+                let sideMenu = document.querySelector('#nav-menu')
+                if (sideMenu.style.display == 'none') {
+                    sideMenu.setAttribute('style', 'display:block;')
+                    leastpri = 5
+                }
+            }
+            function keep_menu_open() {
+                let sideMenu = document.querySelector('#nav-menu')
+                if (sideMenu.style.display == 'block') {
+                    sideMenu.setAttribute('style', 'display:block;')
+                }
+                if (onmenu) {
+                    closeDropDowns()
+                    openDropDowns(9)
+                }
+                onmenu = true
+            }
+            function close_menu() {
+                let sideMenu = document.querySelector('#nav-menu')
+                if (sideMenu.style.display == 'block') {
+                    sideMenu.setAttribute('style', 'display:none;')
+                }
+            }
+        </script>
+    
+        <style>
+            /* Customizing the Scrollbar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+    
+            .bg-accent {
+                --tw-bg-opacity: 1;
+                background-color: hsl(201 96% 32% / var(--tw-bg-opacity));
+            }
+    
+    
+            ::-webkit-scrollbar-thumb {
+                background-color: rgba(30, 58, 138, 1);
+                border-radius: 10px;
+            }
+    
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: gray;
+            }
+    
+            ::-webkit-resizer {
+                background-color: #ffffff;
+            }
+    
+            .material-symbols-outlined {
+                font-variation-settings: "FILL" 0, "wght" 300, "grad" 0, "opzs" 20;
+            }
+    
+            ::-webkit-scrollbar {
+                width: 4px;
+            }
+    
+            .font2 {
+                font-family: 'Barlow', sans-serif;
+            }
+    
+            :root {
+                --primary-color: #fff;
+                --background-color: #212121;
+    
+                --blue-color: #0369A1;
+                --light-blue-color: #F6F6FE;
+                --purple-color: #040320;
+                --font1: 'Poppins', sans-serif;
+                --font2: 'Barlow', sans-serif;
+            }
+    
+            * {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .main-body {
+                font-family: var(--font1);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script src="partials/header.js"></script>
+    </body>
+    
+    </html>  </div>
+  <br><br><br><br><br><br>
+
+  <!-- Back to top button -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+    class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+    id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+      </path>
+    </svg>
+  </button>
+
+  <!-- backgroud pic and heading -->
+  <div>
+    <div class="tpodownload flex flex-col justify-center items-start h-[224px] px-4 lg:px-[11%] py-[48px]">
+      <p class="font2 font-bold text-[52px] lg:text-[68px] uppercase text-white leading-[1]">Downloads</p>
+    </div>
+    <nav class="flex px-4 lg:px-[11%] bg-gray-200 py-[8px] text-black" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center">
+        <li class="inline-flex items-center">
+          <a href="" class="inline-flex items-center text-sm font-medium hover:text-gray-900">
+          </a><a href="https://ctp.nitj.ac.in/" class="text-lg font-medium ml-2"><i class="fa fa-home"></i> CTP</a>
+        </li>
+        <li aria-current="page">
+          <div class="inline-flex items-center">
+            <i style="color: rgb(128, 128, 128); font-size: 12px; margin-left: 12px"
+              class="fa-solid fa-angle-right ml-2"></i>
+            <a href="https://ctp.nitj.ac.in//index_download" class="text-lg font-medium ml-2">Downloads</a>
+          </div>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- option section -->
+  <!-- <div class="flex flex-col gap-3 md:flex-row w-full my-20">
+    <div class="mx-auto px-20 py-10"
+      style="background-color: #E8E8E8;border: 1px solid #E8E8E8; box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2); border-radius: 2px;">
+      <a href="/pr.pdf" class="flex-col item-center justify-content " download="Placement_Report">
+        <img src="./img/placement_reports.png" alt="reports" class="mx-auto px-4 py-4">
+        <h6 class="text-md text-center font-bold">Placement Report</h6>
+      </a>
+    </div>
+    <div class="mx-auto px-20 py-10"
+      style="background-color: #E8E8E8;border: 1px solid #E8E8E8; box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2); border-radius: 2px;">
+      <a href="/pb.pdf" class="flex-col item-center justify-content" download="Placement_Brochures">
+        <img src="./img/brochures.png" alt="brochures" class="mx-auto px-4 py-4">
+        <h6 class="text-md text-center font-bold">Brochures</h6>
+      </a>
+    </div>
+    <div class="mx-auto px-20 py-10"
+      style="background-color: #E8E8E8;border: 1px solid #E8E8E8; box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2); border-radius: 2px;">
+      <a href="/p.pdf" class="flex-col item-center justify-content" download="Policies">
+        <img src="./img/policies.png" alt="policies" class="mx-auto px-4 py-4">
+        <h6 class="text-md text-center font-bold">Policies</h6>
+      </a>
+    </div>
+  </div> -->
+  <!-- Student and Department Links -->
+     
+   <div class="flex flex-col sm:flex-row overflow-auto mb-4" style="margin-top: 60px;">
+    <!-- announcement section -->
+    <div class="w-11/12 sm:w-3/4 flex flex-col ml-2 sm:ml-5 mr-2">
+      <h1 class="text-2xl sm:text-4xl title-font font-medium text-gray-900 p-2 sm:p-3">Student</h1>
+      <div class="xl:w-full md:w-full p-3">
+        <div class="p-6 rounded-lg overflow-scroll"
+          style="height: 550px; border: 1px solid #2167A7; box-shadow: 0px 6px 10px 4px rgba(79, 154, 239, 0.2); border-radius: 6px;">
+          <!-- list of announcement -->
+          <ul class="list-disc font2" id="student">
+            <!-- announcement 1 -->
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-11/12 sm:w-3/4 flex flex-col ml-2 sm:ml-5 mr-2">
+      <h1 class="text-2xl sm:text-4xl title-font font-medium text-gray-900 p-2 sm:p-3">Department</h1>
+      <div class="xl:w-full md:w-full p-3">
+        <div class="p-6 rounded-lg overflow-scroll"
+          style="height: 550px; border: 1px solid #2167A7; box-shadow: 0px 6px 10px 4px rgba(79, 154, 239, 0.2); border-radius: 6px;">
+          <!-- list of announcement -->
+          <ul class="list-disc font2" id="department">
+            <!-- announcement 1 -->
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- notice board -->
+  </div>
+
+   
+  <!-- footer -->
+  <br>
+  <div>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - NITJ</title>
+    
+        <script src="app.js" defer></script>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../style.css" />
+    
+        <!-- ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- font-family: 'Barlow', sans-serif;
+        font-family: 'Poppins', sans-serif; -->
+    
+        <style>
+            .bg-accent {
+                --tw-bg-opacity: 1;
+                background-color: hsl(201 96% 32% / var(--tw-bg-opacity));
+            }
+    
+            /* Customizing the Scrollbar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+    
+            ::-webkit-scrollbar-thumb {
+                background-color: rgba(30, 58, 138, 1);
+                border-radius: 10px;
+            }
+    
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: gray;
+            }
+    
+            ::-webkit-resizer {
+                background-color: #ffffff;
+            }
+    
+            .material-symbols-outlined {
+                font-variation-settings: "FILL" 0, "wght" 300, "grad" 0, "opzs" 20;
+            }
+    
+            ::-webkit-scrollbar {
+                width: 4px;
+            }
+    
+            .font2 {
+                font-family: 'Barlow', sans-serif;
+            }
+    
+            :root {
+                --primary-color: #fff;
+                --background-color: #212121;
+    
+                --blue-color: #0369A1;
+                --light-blue-color: #F6F6FE;
+                --purple-color: #040320;
+                --font1: 'Poppins', sans-serif;
+                --font2: 'Barlow', sans-serif;
+            }
+    
+            * {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .main-body {
+                font-family: var(--font1);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script src="partials/footer.js"></script>
+    </body>
+    
+    </html>  </div>
+</body>
+
+<script>
+
+  const link1 = `https://ctp.nitj.ac.in//Download/Student`
+  const link2 = `https://ctp.nitj.ac.in//Download/Department`
+
+   fetch(link1)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      console.log("come");
+      let student = document.getElementById('student');
+
+      for (let i =0; i<data.length; i++) {
+        let el = document.createElement('li');
+        el.classList.add("ml-3")
+        el.classList.add("mt-1")
+        el.classList.add("mb-1")
+
+        let el1 = document.createElement('a');
+        let span = document.createElement('span');
+        span.style.cssText = "color: #FF8534; font-size: small;"
+        span.classList.add("p-3");
+        el1.style.cssText = "color: #002A51; font-weight:bold; font-size:large";
+
+        el1.target = "_blank";
+        el1.href = data[i].link;
+        el1.innerText = data[i].text;
+
+        span.textContent = data[i].updatedAt.substring(0, 10);
+        el1.appendChild(span);
+        el.appendChild(el1);
+        student.appendChild(el);
+      }
+    });
+
+      fetch(link2)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      let department = document.getElementById('department');
+
+      for (let i =0; i<data.length; i++) {
+        let el = document.createElement('li');
+        el.classList.add("ml-3")
+        el.classList.add("mt-1")
+        el.classList.add("mb-1")
+
+        let el1 = document.createElement('a');
+        let span = document.createElement('span');
+        span.style.cssText = "color: #FF8534; font-size: small;"
+        span.classList.add("p-3");
+        el1.style.cssText = "color: #002A51; font-weight:bold; font-size:large";
+
+        el1.target = "_blank";
+        el1.href = data[i].link;
+        el1.innerText = data[i].text;
+
+        span.textContent = data[i].updatedAt.substring(0, 10);
+        el1.appendChild(span);
+        el.appendChild(el1);
+        department.appendChild(el);
+      }
+    });  
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>
